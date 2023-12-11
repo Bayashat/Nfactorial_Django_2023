@@ -1,0 +1,114 @@
+	Exercise-1: 
+- $ mkdir ~/projects
+- $ mkdir ~/projects/my_project
+- $ cd ~/projects/my_project/
+
+	Exercise-2:
+- $ grep critical ~/errors.log > ~/critical_errors.log
+
+
+	Exercise-3:
+- $ mkdir data && tar -xzf data.tar.gz -C ~/data
+
+	Exercise-4:
+- $ cat ~/Downloads/*.csv > ~/Documents/combined.csv
+
+
+	Exercise-5:
+- $ ls -la > ~/file_list.txt
+
+
+	Exercise-6:
+- $ touch ~/Documents/notes.txt
+- $ open ~/Documents/notes.txt
+ 
+
+	Exercise-7:
+- $ head ~/big_data.txt
+- $ tail ~/big_data.txt
+
+	Exercise-8:
+- $ sort ~/names.txt | uniq > ~/unique_names.txt
+-$ sort -u ~/names.txt > ~/unique_names.txt
+
+
+	Exercise-9:
+- $ rm -r  ~/old_files
+
+
+	Exercise-10:
+- $ wc ~/report.txt
+
+
+	Exercise-11:
+- $ mkdir ~/Documents/txt_files && mv *.txt ./txt_files
+
+
+	Exercise-12:
+- $ sudo apt install htop
+- $ htop
+
+	Exercise-13:
+- $ grep -o -w 'success' application.log | wc -l
+
+
+	Exercise-14:
+- $ ln -s target.txt link_to_target.txt
+
+
+	Exercise-15:
+- $ mkdir ~/Projects
+- $ mkdir ~/Projects/Python ~/Projects/JavaScript ~/Projects/C++
+- $ chmod 700 ~/Projects
+
+
+	Exercise-16:
+- $ sed 's/,/;/g' ~/data.csv > ~/data_semicolon.csv
+
+
+
+	Exercise-17:
+- $ chmod 500 ~/important.txt
+
+
+	Exercise-18:
+- $ wc -l file.txt > line_count.txt 2>error.txt
+
+
+	Exercise-19:
+- $ grep --color=always 'error' application.log | GREP_COLORS='ms=01;31' grep --color=always -E '\b(error)\b'
+
+	Exercise-20:
+- $ du -h --max-depth=1 ~/ > ~/disk_usage.txt
+
+
+	Exercise-21:
+- $ find ~ -type f -size +50M > ~/large_files.txt
+
+
+	Exercise-22:
+- $ grep '.txt' file_list.txt | grep -o file | wc -l
+
+
+	Exercise-23:
+- $ grep $USER ~/data.txt  | tr -d '0-9' | sort -u | awk '{print tolower($0}' > ~/filtered_data.txt 
+
+	Exercise-24:
+- $ echo "Keep this a secret" > ~/secret_message.txt
+- $ gpg -c ~/secret_message.txt
+- $ rm ~/secret_message.txt
+
+	Exercise-25:
+- $ (cat file1.txt && cat file2.txt > combined.txt) || echo "Error: Either file1.txt or file2.txt does not exist." > error.txt
+
+
+
+
+
+
+
+
+
+
+
+
