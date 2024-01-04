@@ -1,0 +1,35 @@
+Assignment 3: Intro to git (Lecture 4-5)
+
+
+Exercise 2: first commit
+$ git clone https://github.com/nFactorial-python/git-intro-Bayashat/
+$ cd git-intro-Bayashat
+$ touch file1.txt
+$ git add file1.txt
+$ git commit -m "add: file1.txt"
+$ git push
+
+Exercise 3: branches
+$ git checkout -b feature
+$ touch file2.txt
+$ git commit -m "add: file2.txt"
+$ git push
+
+Exercise 4: merge
+$ git switch main
+$ git merge feature
+$ git push
+
+Exercise 5: bugfix
+$ git checkout -b bugfix
+$ echo "something" >> file1.txt
+$ git commit -am "fix: bug in file1.txt"
+$ git checkout main
+$ git merge bugfix
+$ git log [--graph]
+$ git push
+
+Exercise 6: gitignore
+$ echo "*.log" > .gitignore
+$ git commit -am "add: gitignore"
+$ git push
