@@ -1,0 +1,84 @@
+## 1. Install and Initiate Poetry
+
+# Install Poetry (if not installed)
+curl -sSL https://install.python-poetry.org | python3 -
+
+# Navigate to your project directory
+cd /path/to/your/project
+
+# Initialize Poetry
+poetry init
+
+
+## 2. Install Several Packages, Display Them, and Update if Necessary
+
+# Install packages (replace package names with actual packages)
+poetry add package1 package2
+
+# Display installed packages
+poetry show
+
+# Update packages (if necessary)
+poetry update
+
+## 3. Commit the Project to Git, Delete the Project, Download It Again, and Configure It Using Poetry
+
+# Initialize a Git repository
+git init
+
+# Add all files to the repository
+git add .
+
+# Commit the changes
+git commit -m "Initial commit"
+
+git remote add <url>
+git push
+
+# Delete the project (optional)
+cd ..
+rm -rf /path/to/your/project
+
+# Clone the project from Git
+git clone https://github.com/yourusername/yourproject.git
+
+# Navigate to the project directory
+cd yourproject
+
+# Configure the project using Poetry
+poetry install
+
+
+## 4. Install pytest Using Poetry
+
+poetry add --dev pytest
+
+## 5. Create a .py File and Make a Simple Function with Test Output
+
+# my_module.py
+
+def add_numbers(a, b):
+    return a + b
+
+if __name__ == "__main__":
+    result = add_numbers(3, 5)
+    print(result)
+
+## 6. Create a Test File test_my_module.py and Write Tests for the Created Function
+
+# test_my_module.py
+
+from my_module import add_numbers
+
+def test_add_numbers():
+    assert add_numbers(2, 3) == 5
+    assert add_numbers(-1, 1) == 0
+    assert add_numbers(0, 0) == 0
+## 7. Run the Tests using pytest
+
+# Run the tests
+poetry run pytest
+
+
+## Push all changes
+git push

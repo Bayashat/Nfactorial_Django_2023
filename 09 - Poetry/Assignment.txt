@@ -1,0 +1,8 @@
+1. Install and initiate poetry
+2. Install several packages, display them and update them if necessary
+3. Commit the project to Git, delete the project, download it again and configure it using poetry
+4. Install pytest using poetry
+5. Create a .py file and make a simple function with test output
+6.Create a test file test_<name>.py and write tests for the created function
+
+You need to add a link to the project with poetry and working pytest
